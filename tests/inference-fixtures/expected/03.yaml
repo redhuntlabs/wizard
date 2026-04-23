@@ -1,0 +1,10 @@
+expected_outcome: BUILDABLE
+expected_kind: content
+expected_audience: anyone
+expected_signals:
+  - "user provides source doc + audience + length cap"
+  - "agent drafts bullets; user critiques jargon and order; agent revises"
+  - "labeled bullet format with bold leads is the preferred shape"
+forbidden_in_draft:
+  - "must"
+  - "hard gate"

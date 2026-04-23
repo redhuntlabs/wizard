@@ -1,0 +1,9 @@
+{
+  "messages": [
+    { "role": "user", "content": "Plan a research loop for me" },
+    { "role": "assistant", "content": "Plan: scope, search, verify, write" },
+    { "role": "user", "content": "Run it on topic X" },
+    { "role": "assistant", "content": "Done. 3 sources verified, summary written." },
+    { "role": "user", "content": "Save this as a skill" }
+  ]
+}

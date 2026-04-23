@@ -1,0 +1,10 @@
+expected_outcome: BUILDABLE
+expected_kind: content
+expected_audience: anyone
+expected_signals:
+  - "user provides recipient + situation + ask"
+  - "agent drafts; user critiques tone and phrasing; agent revises"
+  - "subject line and audience-fit are explicit style levers"
+forbidden_in_draft:
+  - "must"
+  - "hard gate"

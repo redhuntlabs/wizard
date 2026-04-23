@@ -1,0 +1,5 @@
+{"role":"user","message":{"content":[{"type":"text","text":"Help me draft a status email — concise, friendly, ~120 words"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"Here's a draft. Open with shipped wins, then risks, then asks."},{"type":"tool_use","name":"Write","input":{"path":"draft.md"}}]}}
+{"role":"user","message":{"content":[{"type":"text","text":"Make it less corporate. Cut hedging."}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"Tightened. Removed 'just', 'really', 'I think'."}]}}
+{"role":"user","message":{"content":[{"type":"text","text":"Perfect — that's the version I'll send."}]}}

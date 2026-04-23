@@ -1,0 +1,10 @@
+expected_outcome: BUILDABLE
+expected_kind: content
+expected_audience: anyone
+expected_signals:
+  - "user provides decision + context + audience for a one-page memo"
+  - "agent drafts; user critiques framing and tone; agent revises"
+  - "preferred shape: decision-needed → recommendation → trade-off table → alternatives"
+forbidden_in_draft:
+  - "must"
+  - "hard gate"

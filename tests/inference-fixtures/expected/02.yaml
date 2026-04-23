@@ -1,0 +1,10 @@
+expected_outcome: BUILDABLE
+expected_kind: content
+expected_audience: anyone
+expected_signals:
+  - "user provides week's accomplishments + blockers + next-week plan"
+  - "agent drafts; user critiques tone for non-engineer audience; agent revises"
+  - "headline + labeled sections is the preferred format"
+forbidden_in_draft:
+  - "must"
+  - "hard gate"

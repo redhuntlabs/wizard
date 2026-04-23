@@ -1,0 +1,24 @@
+{
+  "name": "wizard",
+  "displayName": "Wizard",
+  "description": "Build AI spells for what you do. A meta-framework for turning any repeatable task into a reusable workflow.",
+  "version": "1.0.0",
+  "author": {
+    "name": "RedHunt Labs"
+  },
+  "homepage": "https://github.com/redhuntlabs/wizard",
+  "repository": "https://github.com/redhuntlabs/wizard",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "spells",
+    "workflows",
+    "meta-framework",
+    "non-dev",
+    "knowledge-worker"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "commands": "./commands/",
+  "hooks": "./hooks/hooks-cursor.json"
+}

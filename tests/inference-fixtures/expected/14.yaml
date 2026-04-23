@@ -1,0 +1,8 @@
+expected_outcome: BUILDABLE
+expected_kind: subagent
+expected_audience: anyone
+expected_signals:
+  - "dispatches 3 critic agents in parallel, each with a distinct lens, on the same draft"
+  - "agent aggregates the parallel critiques and surfaces themes that appear across critics"
+  - "follow-up dispatch goes to a single targeted critic when only one concern remains"
+forbidden_in_draft: []

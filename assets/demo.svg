@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" role="img" aria-label="Demo: building a spell for research, dev, security, and CTEM">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#141731"/>
+      <stop offset="100%" stop-color="#0c0f24"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#2a2238"/>
+      <stop offset="100%" stop-color="#1d1828"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect x="20" y="40" width="840" height="480" rx="14" fill="#e63b5e" opacity="0.06" filter="url(#soft)"/>
+  <rect x="20" y="40" width="840" height="480" rx="14" fill="url(#bg)" stroke="#3a2d3f" stroke-width="1"/>
+
+  <rect x="20" y="40" width="840" height="38" rx="14" fill="url(#chrome)"/>
+  <rect x="20" y="64" width="840" height="14" fill="url(#chrome)"/>
+  <circle cx="46" cy="59" r="6" fill="#ff5f57"/>
+  <circle cx="68" cy="59" r="6" fill="#febc2e"/>
+  <circle cx="90" cy="59" r="6" fill="#28c840"/>
+  <text x="440" y="64" text-anchor="middle"
+        font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="13" fill="#a59ab0" letter-spacing="0.5">
+    wizard &#183; /build-spell
+  </text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14.5">
+
+    <g opacity="0">
+      <animate attributeName="opacity"
+               values="0;1;1;0;0"
+               keyTimes="0;0.020;0.220;0.250;1"
+               dur="20s" repeatCount="indefinite"/>
+
+      <rect x="740" y="98" width="100" height="22" rx="11" fill="#ff7a92" fill-opacity="0.14" stroke="#ff7a92" stroke-opacity="0.65"/>
+      <text x="790" y="113" text-anchor="middle" font-size="11" fill="#ff7a92" letter-spacing="2">RESEARCH</text>
+
+      <text x="48" y="116" fill="#ff7a92">$ /build-spell</text>
+      <text x="48" y="146" fill="#ffb6c1">Meta-builder: What recurring task should we turn into a spell?</text>
+      <text x="48" y="178" fill="#ffffff">&gt; Weekly scan of the top 100K sites &#8212; CDN, TLS, framework adoption.</text>
+      <text x="48" y="208" fill="#ffaf8c">Express mode. Shape match: large-scale-data-roundup.</text>
+
+      <rect x="48" y="226" width="784" height="124" rx="8" fill="#0d0e1c" stroke="#3a2d3f"/>
+      <text x="64" y="252" fill="#ff7a92">tracking-web-tech-adoption &#183; kind: workflow &#183; v1.0.0</text>
+      <text x="64" y="278" fill="#ead8de">Inputs:  domain list, scan dimensions (CDN/TLS/framework/headers), window</text>
+      <text x="64" y="302" fill="#ead8de">Output:  adoption brief + delta table + chart-ready CSV</text>
+      <text x="64" y="326" fill="#ead8de">Quality: every shift backed by samples, top-10 movers, week-over-week delta</text>
+
+      <text x="48" y="384" fill="#ffb6c1">Running try-it on last week&#8217;s scan (100K domains, 4.8M data points)&#8230;</text>
+      <text x="48" y="416" fill="#28c840" font-weight="700">PASS &#183; saved to ~/.wizard/spells/research/</text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity"
+               values="0;0;1;1;0;0"
+               keyTimes="0;0.250;0.270;0.470;0.500;1"
+               dur="20s" repeatCount="indefinite"/>
+
+      <rect x="772" y="98" width="68" height="22" rx="11" fill="#ff9472" fill-opacity="0.14" stroke="#ff9472" stroke-opacity="0.65"/>
+      <text x="806" y="113" text-anchor="middle" font-size="11" fill="#ff9472" letter-spacing="2">DEV</text>
+
+      <text x="48" y="116" fill="#ff9472">$ /build-spell</text>
+      <text x="48" y="146" fill="#ffb6c1">Meta-builder: What recurring task should we turn into a spell?</text>
+      <text x="48" y="178" fill="#ffffff">&gt; Reviewing React PRs &#8212; reviewers check different things, results drift.</text>
+      <text x="48" y="208" fill="#ffaf8c">Standard mode. Routing to building-a-discipline-spell.</text>
+
+      <rect x="48" y="226" width="784" height="124" rx="8" fill="#0d0e1c" stroke="#3a2d3f"/>
+      <text x="64" y="252" fill="#ff9472">reviewing-a-react-pr &#183; kind: discipline &#183; v1.0.0</text>
+      <text x="64" y="278" fill="#ead8de">Rule:    every PR scored on the same 5-axis rubric</text>
+      <text x="64" y="302" fill="#ead8de">Axes:    a11y &#183; perf &#183; types &#183; tests &#183; naming</text>
+      <text x="64" y="326" fill="#ead8de">Hard gate: no LGTM comment until rubric complete</text>
+
+      <text x="48" y="384" fill="#ffb6c1">Pressure-testing on PR #1842 (baseline + with-skill pass)&#8230;</text>
+      <text x="48" y="416" fill="#28c840" font-weight="700">PASS &#183; saved to ~/.wizard/spells/dev/</text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity"
+               values="0;0;1;1;0;0"
+               keyTimes="0;0.500;0.520;0.720;0.750;1"
+               dur="20s" repeatCount="indefinite"/>
+
+      <rect x="744" y="98" width="96" height="22" rx="11" fill="#e63b5e" fill-opacity="0.16" stroke="#e63b5e" stroke-opacity="0.7"/>
+      <text x="792" y="113" text-anchor="middle" font-size="11" fill="#ff7a92" letter-spacing="2">SECURITY</text>
+
+      <text x="48" y="116" fill="#ff5d7c">$ /build-spell</text>
+      <text x="48" y="146" fill="#ffb6c1">Meta-builder: What recurring task should we turn into a spell?</text>
+      <text x="48" y="178" fill="#ffffff">&gt; Triaging Burp findings against our threat model after every pentest pass.</text>
+      <text x="48" y="208" fill="#ffaf8c">Standard mode. Shape match: triage-incoming-list.</text>
+
+      <rect x="48" y="226" width="784" height="124" rx="8" fill="#0d0e1c" stroke="#3a2d3f"/>
+      <text x="64" y="252" fill="#ff5d7c">triaging-burp-findings &#183; kind: workflow &#183; v1.0.0</text>
+      <text x="64" y="278" fill="#ead8de">Inputs:  Burp scan export (XML) + threat-model.md</text>
+      <text x="64" y="302" fill="#ead8de">Output:  ranked list &#8212; true-positive / variant / out-of-scope</text>
+      <text x="64" y="326" fill="#ead8de">Quality: every High/Critical mapped to a threat-model entry</text>
+
+      <text x="48" y="384" fill="#ffb6c1">Running try-it on last week&#8217;s scan (47 findings)&#8230;</text>
+      <text x="48" y="416" fill="#28c840" font-weight="700">PASS &#183; saved to ~/.wizard/spells/security/</text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity"
+               values="0;0;1;1;0"
+               keyTimes="0;0.750;0.770;0.970;1"
+               dur="20s" repeatCount="indefinite"/>
+
+      <rect x="704" y="98" width="136" height="22" rx="11" fill="#ec4899" fill-opacity="0.14" stroke="#ec4899" stroke-opacity="0.65"/>
+      <text x="772" y="113" text-anchor="middle" font-size="11" fill="#f472b6" letter-spacing="2">CTEM &#183; TPRM</text>
+
+      <text x="48" y="116" fill="#f472b6">$ /build-spell</text>
+      <text x="48" y="146" fill="#ffb6c1">Meta-builder: What recurring task should we turn into a spell?</text>
+      <text x="48" y="178" fill="#ffffff">&gt; Weekly CTEM review &#8212; dedupe new exposures, route to teams, score vendor risk.</text>
+      <text x="48" y="208" fill="#ffaf8c">Standard mode. Shape match: triage-incoming-list.</text>
+
+      <rect x="48" y="226" width="784" height="124" rx="8" fill="#0d0e1c" stroke="#3a2d3f"/>
+      <text x="64" y="252" fill="#f472b6">weekly-ctem-and-tprm-triage &#183; kind: workflow &#183; v1.0.0</text>
+      <text x="64" y="278" fill="#ead8de">Inputs:  attack-surface scan diff, vendor inventory, owner roster</text>
+      <text x="64" y="302" fill="#ead8de">Output:  delta &#8212; new / changed / closed &#183; vendor risk score &#183; assigned</text>
+      <text x="64" y="326" fill="#ead8de">Quality: every High/Critical owner-assigned &lt; 24h; no duplicates</text>
+
+      <text x="48" y="384" fill="#ffb6c1">Running try-it on this week&#8217;s diff (89 new exposures, 4 vendors)&#8230;</text>
+      <text x="48" y="416" fill="#28c840" font-weight="700">PASS &#183; saved to ~/.wizard/spells/security/</text>
+    </g>
+
+    <text x="48" y="472" fill="#ff7a92">$</text>
+    <rect x="62" y="461" width="9" height="14" fill="#ff7a92">
+      <animate attributeName="opacity"
+               values="1;0;1;0;1;0;1;0;1;0;1"
+               keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1"
+               dur="20s" repeatCount="indefinite"/>
+    </rect>
+
+    <g font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" letter-spacing="1.5" fill="#6a5e75">
+      <text x="832" y="498" text-anchor="end" opacity="0">scenario 1 of 4
+        <animate attributeName="opacity"
+                 values="0;1;1;0;0"
+                 keyTimes="0;0.020;0.220;0.250;1"
+                 dur="20s" repeatCount="indefinite"/>
+      </text>
+      <text x="832" y="498" text-anchor="end" opacity="0">scenario 2 of 4
+        <animate attributeName="opacity"
+                 values="0;0;1;1;0;0"
+                 keyTimes="0;0.250;0.270;0.470;0.500;1"
+                 dur="20s" repeatCount="indefinite"/>
+      </text>
+      <text x="832" y="498" text-anchor="end" opacity="0">scenario 3 of 4
+        <animate attributeName="opacity"
+                 values="0;0;1;1;0;0"
+                 keyTimes="0;0.500;0.520;0.720;0.750;1"
+                 dur="20s" repeatCount="indefinite"/>
+      </text>
+      <text x="832" y="498" text-anchor="end" opacity="0">scenario 4 of 4
+        <animate attributeName="opacity"
+                 values="0;0;1;1;0"
+                 keyTimes="0;0.750;0.770;0.970;1"
+                 dur="20s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <g transform="translate(48, 488)">
+      <rect width="14" height="6" rx="3" fill="#ff7a92">
+        <animate attributeName="opacity"
+                 values="1;1;0.25;0.25;0.25;0.25;0.25;0.25;1"
+                 keyTimes="0;0.220;0.270;0.470;0.520;0.720;0.770;0.970;1"
+                 dur="20s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="20" width="14" height="6" rx="3" fill="#6a5e75">
+        <animate attributeName="fill"
+                 values="#6a5e75;#6a5e75;#ff9472;#ff9472;#6a5e75;#6a5e75"
+                 keyTimes="0;0.250;0.270;0.470;0.500;1"
+                 dur="20s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="40" width="14" height="6" rx="3" fill="#6a5e75">
+        <animate attributeName="fill"
+                 values="#6a5e75;#6a5e75;#e63b5e;#e63b5e;#6a5e75;#6a5e75"
+                 keyTimes="0;0.500;0.520;0.720;0.750;1"
+                 dur="20s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="60" width="14" height="6" rx="3" fill="#6a5e75">
+        <animate attributeName="fill"
+                 values="#6a5e75;#6a5e75;#ec4899;#ec4899;#6a5e75"
+                 keyTimes="0;0.750;0.770;0.970;1"
+                 dur="20s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+  </g>
+</svg>

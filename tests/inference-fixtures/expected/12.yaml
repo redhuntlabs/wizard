@@ -1,0 +1,8 @@
+expected_outcome: BUILDABLE
+expected_kind: discipline
+expected_audience: anyone
+expected_signals:
+  - "every technical proposal must include at least one runner-up alternative — no exceptions"
+  - "agent course-corrects after the user blocks single-option proposals"
+  - "user enforces the rule across multiple unrelated decisions in the same session"
+forbidden_in_draft: []

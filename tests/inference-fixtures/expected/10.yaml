@@ -1,0 +1,8 @@
+expected_outcome: BUILDABLE
+expected_kind: discipline
+expected_audience: anyone
+expected_signals:
+  - "must cite a primary source for every legal claim — no exceptions for secondary sources"
+  - "agent retracts when caught citing nothing or fabricating sources"
+  - "user enforces the rule across multiple turns and tightens it after repeated violations"
+forbidden_in_draft: []

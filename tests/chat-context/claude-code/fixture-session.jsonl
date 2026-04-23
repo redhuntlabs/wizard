@@ -1,0 +1,6 @@
+{"role":"user","content":"I want to research X. Find me 5 sources, verify each, and summarize."}
+{"role":"assistant","content":"Plan: scope, search, verify, write.","tool_calls":[{"name":"web_search","input":{"query":"X overview"}}]}
+{"role":"user","content":"Verify each one before you cite it."}
+{"role":"assistant","content":"Each citation now has an inline source link."}
+{"role":"user","content":"Great. Wrap up with a 5-bullet summary."}
+{"role":"assistant","content":"Summary:\n- bullet 1\n- bullet 2\n- bullet 3\n- bullet 4\n- bullet 5"}

@@ -1,0 +1,8 @@
+expected_outcome: BUILDABLE
+expected_kind: subagent
+expected_audience: dev
+expected_signals:
+  - "dispatches 3 implementation subagents in parallel, each in its own worktree, with different design constraints"
+  - "all subagents share the same acceptance test so outputs are comparable"
+  - "agent aggregates the three attempts into a comparison and picks the best with explicit reasoning"
+forbidden_in_draft: []

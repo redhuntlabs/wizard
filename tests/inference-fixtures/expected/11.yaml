@@ -1,0 +1,8 @@
+expected_outcome: BUILDABLE
+expected_kind: discipline
+expected_audience: dev
+expected_signals:
+  - "do not ship without tests proving the new behavior — no exceptions, even one-liners"
+  - "the existing suite must always be green before commit; agent does not get to judge whether a failure is 'unrelated'"
+  - "user enforces the rule across multiple turns and applies it to follow-up changes"
+forbidden_in_draft: []

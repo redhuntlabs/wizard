@@ -1,0 +1,8 @@
+expected_outcome: BUILDABLE
+expected_kind: discipline
+expected_audience: anyone
+expected_signals:
+  - "must cite a source for every factual claim — no exceptions"
+  - "agent retracts when caught making unsourced claims"
+  - "user enforces the rule across multiple turns"
+forbidden_in_draft: []

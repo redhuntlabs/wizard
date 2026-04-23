@@ -1,0 +1,8 @@
+expected_outcome: BUILDABLE
+expected_kind: subagent
+expected_audience: researcher
+expected_signals:
+  - "dispatches 3+ researcher agents in parallel, one per candidate"
+  - "all subagents share the same brief and output schema so results aggregate cleanly"
+  - "agent aggregates the parallel reports into a single comparison after all return"
+forbidden_in_draft: []

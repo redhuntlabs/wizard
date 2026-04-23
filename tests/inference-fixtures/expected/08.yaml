@@ -1,0 +1,8 @@
+expected_outcome: BUILDABLE
+expected_kind: workflow
+expected_audience: anyone
+expected_signals:
+  - "stages: diverge → converge → pick one"
+  - "loop-back from converge to diverge when surviving candidates fail constraints"
+  - "diverge generates many candidates without filtering; converge applies stated constraints"
+forbidden_in_draft: []

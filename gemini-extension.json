@@ -1,0 +1,6 @@
+{
+  "name": "wizard",
+  "description": "Build AI spells for what you do. A meta-framework for turning any repeatable task into a reusable workflow — for devs and non-devs alike.",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md"
+}

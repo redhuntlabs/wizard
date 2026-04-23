@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+# SessionStart hook for Wizard.
+# Loads the using-wizard boot skill into the agent's context
+# and ensures WIZARD_HOME exists.
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PLUGIN_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+
+WIZARD_HOME="${WIZARD_HOME:-${HOME}/.wizard}"
+if [ ! -d "$WIZARD_HOME" ]; then
+    mkdir -p "$WIZARD_HOME/personal"
+    cat > "$WIZARD_HOME/README.md" <<'README_EOF'
+# Your Spell Library
+
+This is your personal library of AI workflows ("spells").
+
+- Build a new one: `/build-spell`
+- Use one: `/cast-spell [name]`
+- Browse: `/list-spells`
+- Refine: `/refine-spell [name]`
+- Share: `/share-spell [name]`
+
+Your spells live as plain markdown files under categories
+(`personal/`, `work/`, etc). Back them up however you like.
+
+Framework docs: https://github.com/redhuntlabs/wizard
+README_EOF
+    GREETING="\n\nWizard: created your library at ${WIZARD_HOME}. Type /build-spell to create one, or /list-spells to browse the bundled seed."
+else
+    GREETING=""
+fi
+
+using_skill_content=$(cat "${PLUGIN_ROOT}/skills/using-wizard/SKILL.md" 2>&1 || echo "Error reading using-wizard skill")
+
+escape_for_json() {
+    local s="$1"
+    s="${s//\\/\\\\}"
+    s="${s//\"/\\\"}"
+    s="${s//$'\n'/\\n}"
+    s="${s//$'\r'/\\r}"
+    s="${s//$'\t'/\\t}"
+    printf '%s' "$s"
+}
+
+using_skill_escaped=$(escape_for_json "$using_skill_content")
+greeting_escaped=$(escape_for_json "$GREETING")
+session_context="<EXTREMELY_IMPORTANT>\nYou have Wizard loaded.\n\n**Below is the full content of the 'wizard:using-wizard' skill - your boot guide. For all other skills, use the Skill tool:**\n\n${using_skill_escaped}\n\n${greeting_escaped}\n</EXTREMELY_IMPORTANT>"
+
+if [ -n "${CURSOR_PLUGIN_ROOT:-}" ]; then
+  printf '{\n  "additional_context": "%s"\n}\n' "$session_context"
+elif [ -n "${CLAUDE_PLUGIN_ROOT:-}" ] && [ -z "${COPILOT_CLI:-}" ]; then
+  printf '{\n  "hookSpecificOutput": {\n    "hookEventName": "SessionStart",\n    "additionalContext": "%s"\n  }\n}\n' "$session_context"
+else
+  printf '{\n  "additionalContext": "%s"\n}\n' "$session_context"
+fi
+
+exit 0

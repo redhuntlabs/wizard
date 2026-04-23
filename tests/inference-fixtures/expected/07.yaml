@@ -1,0 +1,8 @@
+expected_outcome: BUILDABLE
+expected_kind: workflow
+expected_audience: dev
+expected_signals:
+  - "stages: write plan → user approves → execute step by step"
+  - "loop-back to an earlier step when a downstream step reveals a flaw"
+  - "each step ends in a green test run before moving to the next"
+forbidden_in_draft: []

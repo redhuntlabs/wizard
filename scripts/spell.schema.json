@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Spell",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "kind",
+    "audience",
+    "ai-tools",
+    "complexity",
+    "time",
+    "version",
+    "source"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]+$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["content", "workflow", "discipline", "subagent"]
+    },
+    "audience": {
+      "type": "string",
+      "enum": [
+        "anyone",
+        "knowledge-worker",
+        "researcher",
+        "dev",
+        "student",
+        "founder",
+        "operator"
+      ]
+    },
+    "ai-tools": {
+      "oneOf": [
+        { "type": "string" },
+        { "type": "array", "items": { "type": "string" } }
+      ]
+    },
+    "complexity": {
+      "type": "string",
+      "enum": ["simple", "guided", "chained", "long-running"]
+    },
+    "time": { "type": "string" },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["bundled", "personal", "community"]
+    },
+    "composes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+expected_outcome: BUILDABLE
+expected_kind: workflow
+expected_audience: researcher
+expected_signals:
+  - "stages: scope, search, verify, write"
+  - "loop-back from verify to search when claims fail to corroborate"
+  - "quality bar: every claim cross-checked against a primary source"
+forbidden_in_draft: []

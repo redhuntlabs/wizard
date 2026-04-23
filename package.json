@@ -1,0 +1,45 @@
+{
+  "name": "wizard",
+  "version": "1.0.0",
+  "description": "Build AI spells for what you do. A meta-framework for turning any repeatable task into a reusable workflow — for devs and non-devs alike.",
+  "type": "module",
+  "main": ".opencode/plugins/wizard.js",
+  "bin": {
+    "wizard-new": "./scripts/new-spell.js",
+    "wizard-validate": "./scripts/validate-spell.js",
+    "wizard-build-loader": "./scripts/build-loader-paths.js"
+  },
+  "scripts": {
+    "validate": "node scripts/validate-spell.js --all",
+    "build-loader": "node scripts/build-loader-paths.js",
+    "test:iron-law": "node scripts/adversarial-tests/attempt-skip-tryit.js",
+    "test:batch-iron-law": "node scripts/adversarial-tests/attempt-batch-builds.js",
+    "postinstall": "node scripts/build-loader-paths.js"
+  },
+  "keywords": [
+    "skills",
+    "spells",
+    "workflows",
+    "ai",
+    "claude-code",
+    "cursor",
+    "codex",
+    "gemini",
+    "opencode",
+    "copilot",
+    "wizard",
+    "non-dev",
+    "researcher",
+    "knowledge-worker"
+  ],
+  "homepage": "https://github.com/redhuntlabs/wizard",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redhuntlabs/wizard"
+  },
+  "license": "MIT",
+  "author": "RedHunt Labs",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

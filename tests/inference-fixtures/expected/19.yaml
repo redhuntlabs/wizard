@@ -1,0 +1,6 @@
+expected_outcome: TOO-BROAD
+expected_signals:
+  - "transcript contains 2+ distinct tasks (research workflow + email drafting) interleaved"
+  - "strong workflow signals (stages, step 1/2, loop-back) AND strong content signals (draft, tone, audience, revise, format as, subject line) appear in the same transcript"
+  - "no single skill could subsume both task patterns without becoming generic"
+forbidden_in_draft: []

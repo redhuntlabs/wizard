@@ -1,0 +1,6 @@
+expected_outcome: TOO-THIN
+expected_signals:
+  - "fewer than 5 substantive turns"
+  - "single instruction + single confirmation; no iteration"
+  - "no recurring pattern that could generalize into a skill"
+forbidden_in_draft: []

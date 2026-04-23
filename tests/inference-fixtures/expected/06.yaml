@@ -1,0 +1,8 @@
+expected_outcome: BUILDABLE
+expected_kind: workflow
+expected_audience: dev
+expected_signals:
+  - "stages: checkout, diff, critique, suggest"
+  - "loop-back from diff to checkout when an unmerged dependency PR is discovered"
+  - "diff is read in dependency order (schema → service → tests → docs)"
+forbidden_in_draft: []

@@ -1,0 +1,22 @@
+{
+  "name": "wizard",
+  "owner": {
+    "name": "RedHunt Labs"
+  },
+  "metadata": {
+    "description": "Build AI spells for what you do \u2014 a meta-framework for turning recurring tasks into reusable skills, across six AI tools.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "wizard",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/redhuntlabs/wizard.git"
+      },
+      "description": "Build AI spells for what you do. Meta-framework that turns recurring tasks into reusable skills. 25 bundled spells (research, writing, decisions, work, dev), 12 framework skills, 12 workflow shapes. Works for researchers, founders, writers, devs \u2014 anyone.",
+      "version": "1.0.0",
+      "strict": true
+    }
+  ]
+}

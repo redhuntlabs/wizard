@@ -1,0 +1,6 @@
+expected_outcome: TOO-THIN
+expected_signals:
+  - "no repeated structure across turns"
+  - "four unrelated Q&A pairs spanning unrelated topics (geography, units, books, etymology)"
+  - "no shared pattern from which to generalize a skill"
+forbidden_in_draft: []
