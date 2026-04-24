@@ -52,13 +52,13 @@
 
 Your AI assistant is good at one-off tasks. It is **much better** when you give it a recipe to follow.
 
-Wizard gives you three things:
+At its core, Wizard is **a meta-builder** — it turns the way *you* already work into reusable spells your AI assistant can cast on demand. Around that core it ships three more things:
 
-> **A spellbook** of 25+ ready-to-use spells — for emails, research, decisions, planning, status updates, dev workflows, and more.
->
-> **A meta-builder** that interviews you and turns your recurring tasks into your own spells, saved to a personal library.
+> **A meta-builder** that interviews you and turns your recurring tasks into your own spells, saved to a personal library. *(The main act.)*
 >
 > **Capture a chat that worked** — `/capture-this-chat` reads the current AI session and turns it into a draft spell in one command. Or use `/build-spell --from-transcript <path>` for a saved transcript from any source.
+>
+> **A spellbook** of 25+ ready-to-use spells — for emails, research, decisions, planning, status updates, dev workflows, and more.
 >
 > **A multi-tool plugin** that runs the same skills in every major AI coding tool — install once, use anywhere.
 
