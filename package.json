@@ -1,5 +1,5 @@
 {
-  "name": "wizard",
+  "name": "@redhuntlabs/wizard",
   "version": "1.0.0",
   "description": "Build AI spells for what you do. A meta-framework for turning any repeatable task into a reusable workflow — for devs and non-devs alike.",
   "type": "module",
@@ -8,6 +8,33 @@
     "wizard-new": "./scripts/new-spell.js",
     "wizard-validate": "./scripts/validate-spell.js",
     "wizard-build-loader": "./scripts/build-loader-paths.js"
+  },
+  "files": [
+    "spells/",
+    "skills/",
+    "commands/",
+    "agents/",
+    "templates/",
+    "scripts/",
+    "hooks/",
+    "assets/",
+    "docs/",
+    ".claude-plugin/",
+    ".cursor-plugin/",
+    ".codex/",
+    ".opencode/",
+    "gemini-extension.json",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "CHANGELOG.md",
+    "PRIVACY.md",
+    "CONTRIBUTING.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "validate": "node scripts/validate-spell.js --all",
